@@ -47,7 +47,6 @@ public class Curve
 		FileOutputFormat.setOutputPath(job, new Path("output"));
 
 		System.exit(job.waitForCompletion(true) ? 0 : 1);
-
 	}
 
 }

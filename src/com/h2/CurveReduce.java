@@ -21,6 +21,7 @@ public class CurveReduce extends Reducer<Text, DoubleWritable, Text, DoubleWrita
 			count++;
 		}
 		
-		context.write(key, new DoubleWritable(sum/count));
+		context.write(key, new DoubleWritable((double)Math.round((sum/count)*100)/100));
+		
 	}
 }

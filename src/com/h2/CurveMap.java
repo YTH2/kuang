@@ -25,7 +25,7 @@ public class CurveMap extends Mapper<LongWritable, Text, Text, DoubleWritable>
 	{
 		try
 		{
-			String[] index = value.toString().split(",");
+			String[] index = value.toString().split(" ");
 			int x = Integer.parseInt(index[0].trim());
 			double y = Double.parseDouble(index[1].trim());
 
